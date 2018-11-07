@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ProjectEstimation>
+
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<h2>Projects</h2>
+
+<section>
+    @foreach (ProjectEstimation project in Model) {
+    <div class="row">
+        <div class="col-md-1">@project.Name</div>
+        <div class="col-md-2">@project.Description</div>
+    </div>
+}
+</section>
+
